@@ -1,0 +1,104 @@
+
+/* Impostazioni generali */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: white;
+    background: linear-gradient(135deg, #101027, #242450, #111827);
+}
+
+/* Titolo */
+h1:first-child {
+    font-size: 34px;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 0 0 20px #818cf8;
+}
+
+/* Campi di input */
+input {
+    width: 280px;
+    padding: 16px;
+    margin: 8px;
+    border: 2px solid #45456b;
+    border-radius: 14px;
+    background-color: #1c1c38;
+    color: white;
+    font-size: 18px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #818cf8;
+    box-shadow: 0 0 15px #6366f1;
+}
+
+/* Pulsanti */
+button {
+    width: 135px;
+    padding: 14px 10px;
+    margin: 8px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Effetto quando passi sopra il pulsante */
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px #6366f177;
+}
+
+/* Effetto quando clicchi */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Colori diversi per le operazioni */
+#somma {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+#diff {
+    background: linear-gradient(135deg, #f59e0b, #ea580c);
+}
+
+#molt {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+#div {
+    background: linear-gradient(135deg, #ec4899, #be185d);
+}
+
+/* Risultato */
+#risultato {
+    min-width: 280px;
+    min-height: 70px;
+    margin-top: 25px;
+    padding: 18px;
+    border: 1px solid #555580;
+    border-radius: 16px;
+    background: #1c1c38;
+    color: #a5f3fc;
+    font-size: 30px;
+    text-align: center;
+    overflow-wrap: anywhere;
+    box-shadow: 0 0 20px #6366f122;
+}
